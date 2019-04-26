@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>e621fy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <div class="nav-wrapper nav-e621">
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#!" class="brand-logo">E621fy</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a target="_blank" href="https://github.com/nerdywoffy/e621fy">Source Code</a></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="centerify">
+                        <p class="centerify-p">Choose your File Here</p>
+                        <div class="centerify-item">
+                            <input ref="userinput" type="file" id="file-picker" accept="image/x-png,image/jpeg">
+                            <a @click="processImage" class="waves-effect waves-light btn mr">Process!</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col s6">
+                        <img v-bind:src="manifestImg" class='responsive-img'>
+                </div>
+                <div class="col s6">
+                    <div id="canvas">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.nav-e621{
+    background-color: rgb(5,33,69)
+}
+
+.centerify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+#file-picker {
+    border: 1px solid #7e7e7e;
+    height: 36px;
+    padding: 6px;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.centerify-p {
+    font-size: 24px;
+}
+.centerify-item {
+    display: flex;
+
+}
+
+.mr {
+    margin-right: 12px;
+    background-color: rgb(5,33,69);
+}
+
+.mr:hover {
+
+    background-color: rgb(9, 45, 91);
+}
